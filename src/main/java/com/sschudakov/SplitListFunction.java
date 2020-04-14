@@ -22,7 +22,7 @@ public class SplitListFunction {
      *
      * @return
      *      array containing two elements - list of odd and list of even elements from input list in reversed order.
-     *      If 'head' is {@null}, then {@code Node[] { null, null }} returned.
+     *      If 'head' is {@code null}, then {@code Node[] { null, null }} returned.
      *      If 'head' is the only element, then {@code Node[] { head, null }} returned.
      */
     public <T> Node[] splitNodesToOddAndEvenReversed(Node<T> head) throws NullPointerException {
@@ -30,7 +30,7 @@ public class SplitListFunction {
             return new Node[] { null, null };
         }
 
-        // create copy of linked list, so original list remains unchanged:
+        // create a copy of linked list, so original list remains unchanged:
         Node<T> currentNode = head.getCopy();
 
         // init two result lists: first (containing odd elements) and second (containing even elements)
